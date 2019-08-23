@@ -1,11 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react';
+import logo from "./images/logo.svg";
+import {Link} from "react-router-dom";
 
-export default class extends Component {
-    render() {
+export default function Navbar() {
         return (
-            <div>
-                hello from Navbar
+           <nav className="navbar navbar-expand-sm navbar-light bg-light ">
+            <Link to="/" className="navbar-brand">
+                <img src={logo} alt="logo"></img>
+            </Link>
+            <div className="collapse navbar-collapse show ml-sm-5">
+                <ul className="navbar-nav">
+                <li className="navbar-item">
+                       <Link className="nav-link" to="/">Home</Link>
+                    </li> 
+                    <li className="navbar-item">
+                       <Link className="nav-link" to="/recipes">Recipes</Link>
+                    </li>
+                </ul>
             </div>
+        
+
+           </nav>
         )
     }
-}
+
