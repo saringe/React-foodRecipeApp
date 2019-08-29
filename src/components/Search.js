@@ -5,7 +5,7 @@ export default class Search extends Component {
         const {handleChange, handleSubmit, search}= this.props
         return (
             <div className="container">
-             <div classNam="row">
+             <div className="row">
                  <div className="col-10 mx-auto mt-5 text-center">
                      <h1 className="text-Slant text-capitalize">
                          Search recipes with <strong className="text-Orange">food2Fork</strong>
