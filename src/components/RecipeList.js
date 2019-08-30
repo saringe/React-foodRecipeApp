@@ -3,7 +3,7 @@ import Recipe from "./Recipes"
 
 export default class RecipeList extends Component {
     render() {
-        const {recipe} = this.props;
+        const {recipes} = this.props;
         return (
             <>
              <div className="container py-5">
@@ -16,8 +16,13 @@ export default class RecipeList extends Component {
                      </div>
 
                  </div>
-                hello from recipe list
-                <Recipe></Recipe>
+                 <div className="row">
+                    {recipes.map(recipe => (<Recipe key={recipe.recipe_id} recipe={recipe}>
+
+                    </Recipe>))}
+
+                 </div>
+             
             </div>
             </>
            
