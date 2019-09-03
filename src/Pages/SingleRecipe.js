@@ -9,7 +9,7 @@ export default class SingleRecipe extends Component {
         this.state = {
             recipe: {},
             id,
-            loading: true
+            loading: true 
 
         };
     }
